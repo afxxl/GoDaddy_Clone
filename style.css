@@ -54,24 +54,24 @@ nav {
   font-size: 10px;
 }
 
-.primary-nav ul {
+nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.primary-nav ul li {
+nav ul li {
   list-style: none;
   padding: 10px 15px;
   border-radius: 12px;
 }
-.primary-nav ul li a {
+nav ul li a {
   text-decoration: none;
   color: #fff;
   font-family: sans-serif;
   font-size: 15px;
   font-weight: bold;
 }
-.primary-nav ul li:hover {
+nav ul li:hover {
   background: gray;
   transition: all 0.5s ease-in-out;
 }
@@ -367,12 +367,6 @@ nav {
 .btn-cmn:hover {
   transform: scale(1.02);
 }
-.section-2 .item2 {
-  grid-area: item2;
-}
-.section-2 .item3 {
-  grid-area: item3;
-}
 
 .section-2 .items {
   padding: 20px;
@@ -400,13 +394,81 @@ nav {
 }
 
 .section-2 .item2 {
+  grid-area: item2;
   background-image: url("https://img1.wsimg.com/cdnassets/transform/fa9063d0-1ec3-4ab1-83e8-dbf6d03f9d3c/img-hp-recore-co-small");
   background-position: center;
   background-size: cover;
 }
 .section-2 .item3 {
+  grid-area: item3;
   background-image: url("https://img1.wsimg.com/cdnassets/transform/ab758ae9-0592-4e88-8623-409257c378fc/intl-img-hp-recore-cctld-small");
   background-position: center;
   background-size: cover;
 }
 /* section 2 end */
+
+/* section 3 start */
+.section-3 {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.main-heading-3 {
+  font-size: 45px;
+  margin-bottom: 4rem;
+  font-family: var(--main-font);
+}
+.section-3 img {
+  width: 100%;
+  border-radius: 10px;
+}
+.section-3 .cards {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.section-3 .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  max-width: 400px;
+  height: 200px;
+  margin-right: 2rem;
+  background: white;
+  outline: none;
+}
+.section-3 .cards .card:first-child {
+  background: #e8eaeb;
+  border-radius: 10px;
+}
+
+.section-3 .cards:hover .card {
+  background: white;
+}
+
+.section-3 .cards:hover .card:hover {
+  background: #e8eaeb;
+  border-radius: 10px;
+}
+
+.card .main-heading {
+  margin-bottom: 1rem;
+  font-family: var(--primary-font);
+}
+.card .primary-headings {
+  font-family: var(--primary-font);
+  font-weight: 250;
+}
+.section-3 .btn-cmn {
+  margin-top: 2rem;
+  align-self: center;
+  padding: 15px 50px;
+}
