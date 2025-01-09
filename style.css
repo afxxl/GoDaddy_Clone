@@ -344,6 +344,7 @@ nav ul li:hover {
   align-items: flex-start;
   border-radius: 1rem;
 }
+
 .section-2 .main-heading {
   font-family: sans-serif;
   margin-bottom: 1rem;
@@ -377,6 +378,12 @@ nav ul li:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.items {
+  transition: all 0.5s ease;
+}
+.items:hover {
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 .items .span-head {
@@ -444,6 +451,7 @@ nav ul li:hover {
   margin-right: 2rem;
   background: white;
   outline: none;
+  transition: 0.5s ease;
 }
 .section-3 .cards .card:first-child {
   background: #e8eaeb;
@@ -457,6 +465,7 @@ nav ul li:hover {
 .section-3 .cards:hover .card:hover {
   background: #e8eaeb;
   border-radius: 10px;
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 .card .main-heading {
@@ -473,3 +482,128 @@ nav ul li:hover {
   padding: 15px 50px;
   text-align: center;
 }
+/* section 3 end */
+/* section 4 start */
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #f5f7f8;
+  margin-top: 5rem;
+  overflow: hidden;
+}
+.section-4 .img-cont .img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  /* object-fit: cover; */
+}
+.img-cont .img:hover {
+  opacity: 0.2;
+}
+.images-container {
+  display: grid;
+  width: 100%;
+  /* position: relative; */
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-template-areas: "image-one image-two image-three image-four";
+  gap: 2rem;
+  height: 400px;
+  margin-bottom: 2rem;
+}
+.img-cont .img-one {
+  grid-area: image-one;
+  /* position: absolute; */
+  /* right: 55px; */
+}
+.img-cont .img-two {
+  grid-area: image-two;
+}
+
+.img-cont .img-three {
+  grid-area: image-three;
+}
+
+.img-cont .img-four {
+  grid-area: image-four;
+  /* position: absolute; */
+  /* left: 35px; */
+}
+.section-4 .main-headings {
+  font-family: var(--main-font);
+  font-size: 3rem;
+}
+
+.section-4 .primary-headings {
+  font-family: var(--primary-font);
+}
+.img-cont {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.btn-center {
+  align-self: center;
+}
+.img-cont .hidden {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease;
+}
+
+.img-cont:hover .hidden {
+  opacity: 1;
+}
+.hidden a {
+  text-decoration: none;
+  display: block;
+}
+.hidden .btn-hidden {
+  padding: 10px 40px;
+  background: #fff;
+  border-radius: 6px;
+  color: #000;
+  font-size: 1rem;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.hidden .sp {
+  font-size: 12px;
+  padding: 10px 20px;
+}
+.hidden .a-hidden {
+  color: #fff;
+  font-family: var(--primary-font);
+}
+.hidden .a-hidden:hover {
+  color: green;
+  text-decoration: underline;
+}
+.img-cont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 10px;
+}
+
+.img-cont:hover::before {
+  opacity: 0.6; /* Adjust the opacity to your preference */
+}
+
+/* section 4 End */
