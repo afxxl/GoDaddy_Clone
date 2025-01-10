@@ -1009,6 +1009,7 @@ footer {
   width: 100%;
   display: flex;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .f-logo img {
@@ -1031,6 +1032,31 @@ footer {
 }
 .links i {
   margin-right: 10px;
+}
+.footer hr {
+  margin-bottom: 5rem;
+  border: 0.8px solid #fff;
+}
+.copy-right {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 40px;
+}
+.copyright {
+  max-width: 80%;
+  font-size: 13px;
+  line-height: 25px;
+}
+.copy-right li {
+  display: inline;
+  margin-right: 8px;
+  list-style: none;
+  font-size: 12px;
+}
+.copy-right li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* footer End */
