@@ -692,17 +692,13 @@ nav ul li:hover {
   color: #d8efef;
 }
 
-/* Section 6 End */
+/*  6 End */
 /* section 7 start */
 .section-7 {
   height: 100vh;
-  width: 100%;
-  border: 1px solid red;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
   padding: 2rem;
 }
 .section-7 .cards {
@@ -717,21 +713,59 @@ nav ul li:hover {
   display: flex;
   background: #f5f7f8;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   border-radius: 8px;
+  margin-right: 2rem;
 }
 .section-7 h1 {
   font-family: var(--primary-font);
   font-size: 3rem;
+  margin-bottom: 2rem;
 }
 .section-7 .cards .card img {
   width: 100px;
   height: 30px;
-  margin-bottom: 13rem;
 }
-.section-7 .cards .card p {
-  bottom: 2rem;
+.section-7 .cards .card .card-cont-1 .p-1 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.section-7 .cards .card .card-cont-1 .p-2 {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 500;
+  line-height: 35px;
+}
+.card-cont-3 .names {
+  font-size: 13px;
+}
+.rating .r-img {
+  width: 220px;
+  height: 180px;
+}
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.rating p {
+  position: absolute;
+  top: 9rem;
+  left: 1.5rem;
+}
+.rating p span {
+  font-weight: bold;
+}
+.arrows img {
+  width: 50px;
+  margin-right: 10px;
+}
+.arrows {
+  position: absolute;
+  right: 40px;
 }
 
 /* section 7 End */
