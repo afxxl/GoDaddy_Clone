@@ -916,3 +916,55 @@ nav ul li:hover {
 }
 
 /* section 9 End */
+/* section 10 Start */
+.section-10 {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: sans-serif;
+}
+.section-10 p {
+  margin-top: 1rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+/* section 10 End */
+/* Section-11 Start */
+
+.section-11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin: 0 auto;
+  height: 120vh;
+  margin-bottom: 10rem;
+  border-radius: 1px solid red;
+}
+.section-11 hr {
+  margin-bottom: 2rem;
+  border: 1px solid lightgray;
+}
+.questions {
+  display: flex;
+  justify-content: space-between;
+}
+.questions p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-bottom: 2rem;
+}
+
+.questions img {
+  width: 25px;
+}
+
+/* Section-11 End */
