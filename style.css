@@ -802,7 +802,7 @@ nav ul li:hover {
     "s1 s2 s3"
     "s4 s5 s5";
   gap: 1.5rem;
-  margin: 5rem;
+  margin: 6rem;
 }
 .sub {
   padding: 35px;
@@ -867,3 +867,52 @@ nav ul li:hover {
 }
 
 /* section 8 end */
+/* section 9 start */
+
+.section-9 {
+  height: 500px;
+  width: 100%;
+  background-image: url("images/Dr\ Sruiti.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.cont-2-9 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 30rem;
+}
+.section-9 .cont-2-9 img {
+  margin-bottom: 3rem;
+}
+
+.section-9 .main-heading {
+  font-family: var(--main-font);
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+.section-9 .primary-headings {
+  max-width: 450px;
+  margin-bottom: 2rem;
+  font-family: var(--primary-font);
+  line-height: 25px;
+}
+.cont-2-9 .btn-cmn {
+  padding: 15px 40px;
+}
+.cont-1-9 p {
+  margin-top: 5rem;
+  font-size: 13px;
+  font-weight: 300;
+  margin-right: 5rem;
+}
+.cont-1-9 p span {
+  font-weight: bold;
+}
+
+/* section 9 End */
